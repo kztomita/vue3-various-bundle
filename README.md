@@ -32,3 +32,7 @@ vue3-js-webpackに加えてTypeScriptのコンポーネントもバンドルす�
 備考:
 
 - TypeScriptのコンポーネント(src/components/counter-component-ts.vue)の&lt;script&gt;タグでlang="ts"属性の指定があると、"export 'render' (imported as 'render') was not found"の警告がでるため、lang="ts"の指定は削除している。
+
+## vue3-ts-vite
+
+TypeScriptのコンポーネントをviteでバンドルする例。
