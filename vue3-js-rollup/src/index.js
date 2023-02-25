@@ -1,7 +1,7 @@
 import { createApp } from 'vue';
 import CounterComponent from './components/counter-component.vue';
 
-window.onload = function () {
+function onInitialize() {
   const app = createApp({
     data() {
       return {
@@ -14,3 +14,4 @@ window.onload = function () {
   app.mount('#app');
 }
 
+document.addEventListener('DOMContentLoaded', onInitialize);
