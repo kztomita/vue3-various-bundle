@@ -4,6 +4,8 @@ Vue3のSFC(Single File Component)をBundleする色々な例。<br />
 JavaScriptだけのケース、TypeScriptを使うケース。<br />
 rollupでバンドルするケース、webpackでバンドルするケースなど。
 
+毎度バンドル設定に手こずるので、ここに記録を残しておきます。
+
 ## vue3-js-rollup
 
 JavaScriptのコンポーネントをrollupでバンドルする例。<br />
