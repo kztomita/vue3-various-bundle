@@ -6,7 +6,7 @@ function onInitialize() {
   const app = createApp({
     data() {
       return {
-        message: 'This is vue3-ts-webpack.',
+        message: 'JavaScript + TypeScript + webpackの例',
       }
     }
   });

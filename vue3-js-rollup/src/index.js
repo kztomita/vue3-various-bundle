@@ -5,7 +5,7 @@ function onInitialize() {
   const app = createApp({
     data() {
       return {
-        message: 'This is vue3-js-rollup.',
+        message: 'JavaScript + rollupの例',
       }
     }
   });

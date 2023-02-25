@@ -6,7 +6,7 @@ function onInitialize() {
   const app = createApp({
     data() {
       return {
-        message: 'This is vue3-ts-rollup.',
+        message: 'JavaScript + TypeScript + rollupの例',
       }
     }
   });
