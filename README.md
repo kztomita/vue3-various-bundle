@@ -19,7 +19,7 @@ vue3-js-rollupに加えてTypeScriptのコンポーネントもバンドルす�
 
 備考:
 
-- rollup.config.jsでは@rollup/plugin-typescriptではなくrollup-plugin-typescript2を使っている。@rollup/plugin-typescriptだと.vueファイルの&lt;script lang="ts"&gt;内のコードがJavaScriptとして扱われてしまうっぽい。
+- rollup.config.jsでは@rollup/plugin-typescriptではなくrollup-plugin-typescript2を使っている。@rollup/plugin-typescriptだと.vueファイルの&lt;script lang="ts"&gt;内のコードがJavaScriptとして扱われてしまいエラーとなる。
 
 ## vue3-js-webpack
 
