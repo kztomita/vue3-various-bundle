@@ -16,7 +16,20 @@ module.exports = {
     rules: [
       {
         test: /\.ts$/,
-        use: 'ts-loader',
+        loader: 'ts-loader',
+        /*
+         * appendTsSuffixToを指定することで、
+         * .vueの<script>でlang="ts"を指定できるようになるが、
+         * 今度は以下のエラーがでるようになる。
+         *   TS7006: Parameter 'n' implicitly has an 'any' type.
+         * [参考]
+         * https://github.com/vuejs/vue-loader/issues/1915
+         */
+        /*
+        options: {
+          appendTsSuffixTo: [/\.vue$/]
+        }
+        */
       },
       {
         test: /\.vue$/,

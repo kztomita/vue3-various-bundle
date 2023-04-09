@@ -35,6 +35,13 @@ vue3-js-webpackに加えてTypeScriptのコンポーネントもバンドルす�
 
 - TypeScriptのコンポーネント(src/components/counter-component-ts.vue)の&lt;script&gt;タグでlang="ts"属性の指定があると、"export 'render' (imported as 'render') was not found"の警告がでるため、lang="ts"の指定は削除している。
 
+- webpack.cofnig.jsでts-loaderに options: { appendTsSuffixTo: [/\\.vue$/] } を指定すると
+lang="ts"は指定できるようになるが、今度は
+TS7006: Parameter 'n' implicitly has an 'any' type.
+のエラーが発生するようになる(参考: https://github.com/vuejs/vue-loader/issues/1915)。
+
+- このエラーを回避するには、(1) tsconfig.jsonで"strict"をfalseにする。 (2) .vueファイルのstyleタグからscopedを外す。 方法があるがいずれもあまりよいやり方ではないだろう。
+
 ## vue3-ts-vite
 
 TypeScriptのコンポーネントをviteでバンドルする例。
